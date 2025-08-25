@@ -1,0 +1,99 @@
+MODEL 0:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_val   R-squared:                       0.118
+Model:                            OLS   Adj. R-squared:                  0.102
+Method:                 Least Squares   F-statistic:                     4.610
+Date:                Sat, 16 Aug 2025   Prob (F-statistic):             0.0360
+Time:                        13:32:58   Log-Likelihood:                -89.899
+No. Observations:                  60   AIC:                             183.8
+Df Residuals:                      58   BIC:                             188.0
+Df Model:                           1                                         
+Covariance Type:                  HC3                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      6.7133      0.456     14.712      0.000       5.819       7.608
+StageCode      0.1830      0.085      2.147      0.032       0.016       0.350
+==============================================================================
+Omnibus:                        7.245   Durbin-Watson:                   1.287
+Prob(Omnibus):                  0.027   Jarque-Bera (JB):               10.446
+Skew:                           0.325   Prob(JB):                      0.00539
+Kurtosis:                       4.938   Cond. No.                         17.4
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+MODEL 1:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_val   R-squared:                       0.657
+Model:                            OLS   Adj. R-squared:                  0.632
+Method:                 Least Squares   F-statistic:                     25.88
+Date:                Sat, 16 Aug 2025   Prob (F-statistic):           4.32e-12
+Time:                        13:32:58   Log-Likelihood:                -61.562
+No. Observations:                  60   AIC:                             133.1
+Df Residuals:                      55   BIC:                             143.6
+Df Model:                           4                                         
+Covariance Type:                  HC3                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept       -851.5119    224.849     -3.787      0.000   -1292.208    -410.816
+StageCode          0.0381      0.050      0.769      0.442      -0.059       0.135
+Employee_Count     0.0011      0.000      6.558      0.000       0.001       0.001
+Profitability     -0.3532      0.192     -1.841      0.066      -0.729       0.023
+Year               0.4246      0.111      3.817      0.000       0.207       0.643
+==============================================================================
+Omnibus:                       25.384   Durbin-Watson:                   1.959
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               87.587
+Skew:                           1.039   Prob(JB):                     9.56e-20
+Kurtosis:                       8.543   Cond. No.                     4.39e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 4.39e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+MODEL 2:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_val   R-squared:                       0.752
+Model:                            OLS   Adj. R-squared:                  0.702
+Method:                 Least Squares   F-statistic:                     24.81
+Date:                Sat, 16 Aug 2025   Prob (F-statistic):           7.40e-16
+Time:                        13:32:58   Log-Likelihood:                -51.797
+No. Observations:                  60   AIC:                             125.6
+Df Residuals:                      49   BIC:                             148.6
+Df Model:                          10                                         
+Covariance Type:                  HC3                                         
+===========================================================================================
+                              coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                -418.3380    183.106     -2.285      0.022    -777.220     -59.456
+C(StageCat)[T.Seed]      4.506e-09   1.97e-09      2.285      0.022     6.4e-10    8.37e-09
+C(StageCat)[T.Series_A] -4.942e-10   2.16e-10     -2.285      0.022   -9.18e-10   -7.02e-11
+C(StageCat)[T.Series_B]   -53.0658     22.766     -2.331      0.020     -97.687      -8.445
+C(StageCat)[T.Series_C]   -52.3441     22.938     -2.282      0.022     -97.301      -7.387
+C(StageCat)[T.Series_D]   -51.8185     22.841     -2.269      0.023     -96.586      -7.051
+C(StageCat)[T.Series_E]   -51.9429     22.968     -2.262      0.024     -96.959      -6.926
+C(StageCat)[T.Series_F]   -51.7208     22.963     -2.252      0.024     -96.728      -6.713
+C(StageCat)[T.Series_G]   -52.1728     22.965     -2.272      0.023     -97.184      -7.162
+C(StageCat)[T.IPO]        -52.1522     22.889     -2.278      0.023     -97.014      -7.290
+C(StageCat)[T.Acquired]   -53.1209     22.783     -2.332      0.020     -97.775      -8.466
+Employee_Count              0.0010      0.000      8.694      0.000       0.001       0.001
+Profitability              -0.5737      0.198     -2.899      0.004      -0.962      -0.186
+Year                        0.2364      0.102      2.319      0.020       0.037       0.436
+==============================================================================
+Omnibus:                       37.954   Durbin-Watson:                   1.850
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              138.524
+Skew:                           1.721   Prob(JB):                     8.31e-31
+Kurtosis:                       9.600   Cond. No.                     3.30e+20
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The smallest eigenvalue is 2.49e-33. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
