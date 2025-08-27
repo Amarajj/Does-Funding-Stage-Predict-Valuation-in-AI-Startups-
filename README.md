@@ -24,10 +24,14 @@ Industry matters:
 Healthcare AI and Autonomous Vehicles dominate late-stage valuations.
 Generative AI shows earlier valuation spikes.
 Wide dispersion in later stages highlights variability and outliers.
+
+
 🏷️ Case Study: Surplus
+
 Stage: Seed (pre-launch, MVP in progress)
 Valuation: $10M
 Raise: $2.5M
+
 Insight: Surplus’s valuation is above dataset averages for Seed startups, signaling strong positioning. Benchmarks suggest potential 2–3x valuation growth when advancing to Series A if MVP traction and AI defensibility are demonstrated.
 
 
